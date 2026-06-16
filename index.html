@@ -1,0 +1,1728 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amifec Alimentos - Qualidade que se põe à mesa, desde 2005</title>
+
+    <!-- ===== SEO META TAGS ===== -->
+    <meta name="description" content="Amifec Alimentos — indústria brasileira de alimentos desde 2005. Polvilho azedo, mistura para pão de queijo, fécula de mandioca e amido de milho. Do Paraná para o Brasil e para o mundo.">
+    <meta name="keywords" content="amifec, amifec alimentos, polvilho azedo, pão de queijo, fécula mandioca, amido milho, indústria alimentos Paraná, Nova Londrina">
+    <meta name="author" content="Amifec Alimentos">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2e7d32">
+    <link rel="canonical" href="https://www.amifec.com.br/">
+
+    <!-- ===== OPEN GRAPH (Facebook, WhatsApp, LinkedIn) ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Amifec Alimentos - Qualidade que se põe à mesa">
+    <meta property="og:description" content="Indústria brasileira de alimentos desde 2005. Cremosidade, praticidade e só 3 ingredientes — do Paraná para o mundo.">
+    <meta property="og:image" content="ami.jfif">
+    <meta property="og:url" content="https://www.amifec.com.br/">
+    <meta property="og:site_name" content="Amifec Alimentos">
+
+    <!-- ===== TWITTER CARD ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Amifec Alimentos - Qualidade que se põe à mesa">
+    <meta name="twitter:description" content="Indústria brasileira de alimentos desde 2005. Do Paraná para o mundo.">
+    <meta name="twitter:image" content="ami.jfif">
+
+    <!-- ===== FAVICON (Logo Amifec) ===== -->
+    <link rel="icon" type="image/png" href="logo amifec.jfif">
+    <link rel="apple-touch-icon" href="logo amifec.jfif">
+
+    <!-- ===== STRUCTURED DATA (JSON-LD) ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Amifec Alimentos",
+      "url": "https://www.amifec.com.br",
+      "logo": "ami.jfif",
+      "foundingDate": "2005",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rod. PR 182, Km 03",
+        "addressLocality": "Nova Londrina",
+        "addressRegion": "PR",
+        "postalCode": "87860-000",
+        "addressCountry": "BR"
+      },
+      "telephone": "+55-44-3432-1080",
+      "email": "amifec@amifec.com.br",
+      "sameAs": [
+        "https://www.instagram.com/amifec.alimentos",
+        "https://www.linkedin.com/company/amifec-alimentos"
+      ]
+    }
+    </script>
+
+    <!-- ===== GOOGLE FONTS (Plus Jakarta Sans + Lora) ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lora:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ===== Chart.js (CDN) ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js" defer></script>
+
+    <!-- ===== Lucide Icons (CDN) ===== -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <style>
+        @media (max-width: 1024px) {
+            .matriz-blocos { grid-template-columns: repeat(2, 1fr) !important; }
+        }
+        @media (max-width: 600px) {
+            .matriz-blocos { grid-template-columns: 1fr !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== CURSOR CUSTOMIZADO ===== -->
+
+
+    <!-- ===== PRELOADER ===== -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo"><img src="Logo-da-Amifec-1-1024x810.png"></div>
+            <h2>Amifec Alimentos</h2>
+            <div class="preloader-bar"><div class="preloader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- ===== BARRA DE PROGRESSO DE SCROLL ===== -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ===== MENU DE NAVEGAÇÃO FIXO ===== -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <a href="#inicio" class="logo">
+                <img src="Logo-da-Amifec-1-1024x810.png" class="logo-icon-img" alt="Logo-da-Amifec-1-1024x810">
+                <span class="logo-text">Amifec<strong>Alimentos</strong></span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio" class="nav-link">Início</a></li>
+
+                <li class="nav-dropdown">
+                    <button class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        A Empresa <i data-lucide="chevron-down" class="nav-chev"></i>
+                    </button>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="#sobre"><i data-lucide="building-2"></i><span><strong>Sobre nós</strong><small>Quem somos</small></span></a></li>
+                        <li><a href="#dados"><i data-lucide="chart-column"></i><span><strong>A Amifec em Dados</strong><small>Números da empresa</small></span></a></li>
+                        <li><a href="#historia"><i data-lucide="history"></i><span><strong>História</strong><small>Trajetória desde 2005</small></span></a></li>
+                        <li><a href="#mvv"><i data-lucide="target"></i><span><strong>Missão, Visão e Valores</strong><small>Nossos pilares</small></span></a></li>
+                        <li><a href="#filiais"><i data-lucide="map-pin"></i><span><strong>Matriz e Filiais</strong><small>Nova Londrina · Cidade Gaúcha · Maria Helena</small></span></a></li>
+                        <li><a href="#estrutura-meio-ambiente"><i data-lucide="leaf"></i><span><strong>Estrutura e Meio Ambiente</strong><small>Sustentabilidade &amp; infraestrutura</small></span></a></li>
+                        <li><a href="#mercado"><i data-lucide="globe-2"></i><span><strong>Mercado &amp; Exportação</strong><small>Nacional &amp; internacional</small></span></a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#produtos" class="nav-link">Produtos</a></li>
+
+                <li class="nav-dropdown">
+                    <button class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Gestão <i data-lucide="chevron-down" class="nav-chev"></i>
+                    </button>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="#faturamento"><i data-lucide="line-chart"></i><span><strong>DRE &amp; Financeiro</strong><small>Resultados + gráficos</small></span></a></li>
+                        <li><a href="#organograma"><i data-lucide="git-fork"></i><span><strong>Organograma</strong><small>Hierarquia</small></span></a></li>
+                        <li><a href="#departamentos"><i data-lucide="layout-grid"></i><span><strong>Departamentos</strong><small>8 setores detalhados</small></span></a></li>
+                        <li><a href="#visao10"><i data-lucide="rocket"></i><span><strong>Visão 10 anos</strong><small>Planos 2026-2035</small></span></a></li>
+                        <li><a href="#diferenciais"><i data-lucide="award"></i><span><strong>Diferenciais</strong><small>Por que Amifec</small></span></a></li>
+                        <li><a href="#sustentabilidade"><i data-lucide="leaf"></i><span><strong>Reconhecimento</strong><small>Cases e impacto</small></span></a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-dropdown">
+                    <button class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Mais <i data-lucide="chevron-down" class="nav-chev"></i>
+                    </button>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="#jogo"><i data-lucide="gamepad-2"></i><span><strong>Jogo</strong><small>Desafio Amifec</small></span></a></li>
+                        <li><a href="#quiz"><i data-lucide="brain"></i><span><strong>Quiz</strong><small>Teste seus conhecimentos</small></span></a></li>
+                        <li><a href="#depoimentos"><i data-lucide="message-circle-heart"></i><span><strong>Depoimentos</strong><small>O que dizem os clientes</small></span></a></li>
+                        <li><a href="#conclusao"><i data-lucide="check-circle-2"></i><span><strong>Conclusão</strong><small>Considerações finais</small></span></a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#contato" class="nav-link nav-cta"><i data-lucide="send" class="nav-cta-icon"></i> Contato</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema" title="Modo escuro/claro">🌙</button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== 1. PÁGINA INICIAL (HERO) ===== -->
+    <section id="inicio" class="hero">
+        <div class="hero-slider" id="heroSlider">
+            <div class="hero-slide active" style="background-image: url('mandioca.webp');"></div>
+            <div class="hero-slide" style="background-image: url('farinha.jpeg');"></div>
+            <div class="hero-slide" style="background-image: url('Bolo-de-tapioca.webp');"></div>
+            <div class="hero-slide" style="background-image: url('pão\ de\ queijoooo\ 2.0.jpeg');"></div>
+            <div class="hero-slide" style="background-image: url('Polvilhoo.Capa.png');"></div>
+            <div class="hero-slide" style="background-image: url('tapioca.jpeg');"></div>
+            <div class="hero-slide" style="background-image: url('polvilho\ \(pão\ de\ queijo\).jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-badge">⭐ Mais de 20 anos de tradição</span>
+            <h1>Amifec <span>Alimentos</span></h1>
+            <p class="slogan">Qualidade que se põe à mesa. Do Paraná para o mundo.</p>
+            <p class="hero-desc">Indústria brasileira de alimentos que une tradição e tecnologia para transformar
+            o que é natural em ingredientes essenciais para a indústria e para a cozinha do dia a dia.</p>
+            <div class="hero-buttons">
+                <a href="#sobre" class="btn btn-primary">Conheça a empresa</a>
+                <a href="#jogo" class="btn btn-outline">🎮 Jogar Desafio</a>
+            </div>
+            <div class="hero-numbers">
+            </div>
+        </div>
+        <div class="hero-visual">
+        </div>
+        <div class="scroll-down"><a href="#sobre">⬇</a></div>
+    </section>
+
+    <!-- ===== 2. SOBRE A EMPRESA ===== -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <span class="section-tag">Quem Somos</span>
+            <h2 class="section-title">Sobre a Empresa</h2>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>A <strong>Amifec Alimentos Ltda</strong> é uma indústria privada brasileira fundada em
+                    <strong>2005</strong>, com sede em <strong>Nova Londrina-PR</strong> e filiais em
+                    <strong>Cidade Gaúcha</strong> e <strong>Maria Helena</strong>, ambas no Paraná.</p>
+                    <p>Atua no setor de <strong>fabricação de amidos e féculas de vegetais</strong>, sendo
+                    reconhecida pela <strong>qualidade dos produtos e capacidade de produção</strong>. É referência
+                    no segmento de <strong>derivados de mandioca</strong>, com linha que inclui polvilho doce e azedo,
+                    farinha de mandioca, mistura para pão de queijo e amidos modificados.</p>
+                    <p>Opera com <strong>3 unidades fabris</strong> — incluindo uma polvilheira — e mantém
+                    forte controle de qualidade em todas as etapas de produção. Conta com <strong>entre 200 e 500
+                    colaboradores</strong> e atende tanto o mercado nacional quanto exportações, consolidando-se
+                    como uma empresa sólida com mais de duas décadas de experiência.</p>
+                    <div class="sobre-features">
+                        <div class="feature"><span>🏭</span><p>3 Unidades fabris</p></div>
+                        <div class="feature"><span>🌾</span><p>Derivados de mandioca</p></div>
+                        <div class="feature"><span>👷</span><p>200-500 colaboradores</p></div>
+                        <div class="feature"><span>🌎</span><p>Exporta para o exterior</p></div>
+                    </div>
+                </div>
+                <div class="sobre-stats">
+                    <div class="stat-card"><h3>2005</h3><p>Ano de fundação</p></div>
+                    <div class="stat-card"><h3>21</h3><p>Anos de mercado</p></div>
+                    <div class="stat-card"><h3>3</h3><p>Unidades fabris (PR)</p></div>
+                    <div class="stat-card"><h3>100%</h3><p>Criada no Paraná</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NÚMEROS DA AMIFEC ===== -->
+    <section id="numeros-amifec" class="section section-alt numeros-amifec">
+        <div class="container">
+            <span class="section-tag">Em números</span>
+            <h2 class="section-title">A Amifec em Dados</h2>
+            <div class="numeros-grid">
+                <div class="numero-card">
+                    <strong>Até 500</strong>
+                    <span>Colaboradores diretos e indiretos no processo</span>
+                </div>
+                <div class="numero-card">
+                    <strong>62</strong>
+                    <span>Máquinas envolvidas em nossos processos</span>
+                </div>
+                <div class="numero-card">
+                    <strong>3</strong>
+                    <span>Fábricas em atividade, sendo uma polvilheira</span>
+                </div>
+                <div class="numero-card">
+                    <strong>434</strong>
+                    <span>Cidades atendidas em toda a América</span>
+                </div>
+                <div class="numero-card">
+                    <strong>19</strong>
+                    <span>Anos atendendo o mercado com qualidade</span>
+                </div>
+                <div class="numero-card">
+                    <strong>3200</strong>
+                    <span>Toneladas de féculas produzidas todo mês</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ===== SUMÁRIO ===== -->
+
+    <!-- ===== HISTÓRIA / TIMELINE ===== -->
+    <section id="historia" class="section section-alt">
+        <div class="container">
+            <span class="section-tag">Nossa Trajetória</span>
+            <h2 class="section-title">História da Amifec</h2>
+            <p class="section-subtitle">Conheça os principais marcos da nossa empresa.</p>
+
+            <div class="historia-grid">
+                <div class="historia-media">
+                    <figure class="historia-fundadores">
+                        <img src="Nossos-Fundadores-01.png" alt="Fundadores da Amifec Alimentos" loading="lazy">
+                        <figcaption>Nossos Fundadores</figcaption>
+                    </figure>
+                </div>
+                <div class="historia-texto">
+                    <p>A Amifec Alimentos iniciou sua história no segmento da agroindústria em <strong>1994</strong>, sendo fundada oficialmente por <strong>Elson Lopes</strong> no ano de <strong>2005</strong>. A empresa, especializada na produção de amidos, polvilhos e derivados de mandioca, possui sua sede principal em <strong>Nova Londrina (PR).</strong></p>
+                    <p>A partir de <strong>2010</strong>, a Amifec deu um passo decisivo em sua expansão e abriu novas filiais em <strong>Cidade Gaúcha</strong>, com sua unidade polvilheira, e em <strong>Maria Helena</strong>, também no Paraná. Com <strong>três unidades fabris</strong> em operação, a empresa ampliou significativamente sua capacidade produtiva, diversificou sua linha de produtos e fortaleceu sua presença no mercado nacional.</p>
+                    <p>A partir de <strong>2020</strong>, a Amifec consolidou-se como referência no segmento de <strong>derivados de mandioca</strong>, atendendo todo o território brasileiro e iniciando suas operações de comércio internacional. O reconhecimento veio pela qualidade constante dos produtos, pela capacidade produtiva e pelo rigoroso controle em todas as etapas da fabricação.</p>
+                    <p>Hoje, com mais de <strong>20 anos de atuação</strong>, a Amifec conta com infraestrutura moderna, maquinário avançado e uma equipe entre <strong>200 e 500 colaboradores</strong>. A empresa atua tanto no mercado nacional quanto internacional, mantendo seu compromisso com qualidade, inovação e proximidade com clientes e parceiros — e marcando presença nas redes sociais como <strong>@amifec.alimentos</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ESTRUTURA E MEIO AMBIENTE ===== -->
+    <section id="estrutura-meio-ambiente" class="section">
+        <div class="container">
+            <span class="section-tag">Sustentabilidade</span>
+            <h2 class="section-title">🌱 Estrutura e Meio Ambiente</h2>
+            <p class="section-subtitle">A Amifec investe em infraestrutura moderna e em práticas responsáveis para reduzir o impacto ambiental em todas as etapas da produção.</p>
+            <div class="historia-grid">
+                <div class="historia-texto">
+                    <p>A Amifec Alimentos mantém um <strong>parque industrial moderno</strong> com três unidades fabris no Paraná, equipadas com maquinário automatizado, layout otimizado e capacidade produtiva expandida para atender o mercado nacional e internacional. Toda a operação é <strong>100% regularizada</strong> junto ao IAT-PR (Instituto Água e Terra), com monitoramento contínuo de efluentes e emissões.</p>
+                    <p>No campo ambiental, a empresa investe em <strong>reuso de água</strong> por meio de estação de tratamento própria, reaproveitando a água da lavagem das raízes e reduzindo o consumo hídrico em mais de <strong>60%</strong>. A <strong>manipueira</strong> — resíduo líquido da mandioca — é tratada e transformada em <strong>biofertilizante</strong>, devolvido aos produtores parceiros. Já o bagaço (fibra resultante da extração do amido) é destinado à <strong>ração animal</strong>, evitando descartes e gerando renda extra na cadeia.</p>
+                    <p>A eficiência energética é prioridade: secadores otimizados, iluminação LED em todas as plantas e estudos avançados para implantação de <strong>energia solar</strong> nas coberturas das três unidades. A Amifec mantém compra direta da mandioca de mais de <strong>300 famílias rurais</strong> do noroeste paranaense, fortalecendo a economia regional e consolidando seu <strong>compromisso ESG</strong>, alinhado aos ODS da ONU: produção responsável, trabalho decente e cidades sustentáveis.</p>
+                </div>
+                <div class="historia-media">
+                    <figure class="historia-video">
+                        <video autoplay muted playsinline loop
+                            src="https://amifec.com.br/wp-content/uploads/2024/01/cassava-plant-leaves-blowing-in-wind-at-sunrise-wi-2023-06-02-00-25-58-utc.mp4"
+                            poster=""></video>
+                        <figcaption>Plantação de mandioca — matéria-prima da Amifec</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 3. MISSÃO, VISÃO E VALORES ===== -->
+    <section id="mvv" class="section">
+        <div class="container">
+            <span class="section-tag">Princípios</span>
+            <h2 class="section-title">Missão, Visão e Valores</h2>
+            <div class="mvv-grid">
+                <div class="mvv-card">
+                    <div class="mvv-icon"><i data-lucide="target" style="width:56px;height:56px;stroke-width:1.5;"></i></div>
+                    <h3>Missão</h3>
+                    <p>Produzir alimentos de qualidade valorizando o relacionamento com nossos colaboradores, clientes e parceiros.</p>
+                </div>
+                <div class="mvv-card">
+                    <div class="mvv-icon"><i data-lucide="eye" style="width:56px;height:56px;stroke-width:1.5;"></i></div>
+                    <h3>Visão</h3>
+                    <p>Atender as expectativas de nossos clientes e ser referência na produção de alimentos no mercado nacional e internacional.</p>
+                </div>
+                <div class="mvv-card">
+                    <div class="mvv-icon"><i data-lucide="gem" style="width:56px;height:56px;stroke-width:1.5;"></i></div>
+                    <h3>Valores</h3>
+                    <ul class="valores-list">
+                        <li>Busca contínua pela excelência;
+transparência, comprometimento, ética, respeito e responsabilidade socioambiental.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção "Administração na Prática" (SWOT/5W2H/PDCA) removida a pedido -->
+
+
+    <!-- ===== PRODUTOS ===== -->
+    <section id="produtos" class="section section-alt">
+        <div class="container">
+            <span class="section-tag">Nosso Portfólio</span>
+            <h2 class="section-title">Linha de Produtos Amifec</h2>
+            <p class="section-subtitle">Cremosidade, praticidade e qualidade — feitos com poucos e bons ingredientes.</p>
+            <div class="produtos-grid">
+                <div class="produto-card"><div class="produto-imagem"><img src="FECULA-1-KG.png" alt="Féculas e Amidos Vegetais" loading="lazy"></div>
+                    <h3>Féculas e Amidos Vegetais</h3>
+                    <p>Féculas de mandioca e amidos vegetais de alta qualidade, produzidos com matéria-prima selecionada do Paraná.</p>
+                    <span class="produto-tag">Linha base</span>
+                </div>
+                <div class="produto-card"><div class="produto-imagem"><img src="POLVILHO-DOCE-1-KG.png" alt="Polvilho Doce" loading="lazy"></div>
+                    <h3>Polvilho Doce</h3>
+                    <p>Polvilho doce Amifec, ideal para bolos, biscoitos e receitas que pedem maciez e leveza.</p>
+                    <span class="produto-tag">Linha tradicional</span>
+                </div>
+                <div class="produto-card"><div class="produto-imagem"><img src="POLVILHO-AZEDO-1-KG.png" alt="Polvilho Azedo" loading="lazy"></div>
+                    <h3>Polvilho Azedo</h3>
+                    <p>O verdadeiro polvilho azedo Amifec, essencial para pão de queijo, biscoitos e receitas autênticas.</p>
+                    <span class="produto-tag">Mais vendido</span>
+                </div>
+                <div class="produto-card"><div class="produto-imagem"><img src="FARINHA-BRANCA-1-KG (1).png" alt="Farinha de Mandioca" loading="lazy"></div>
+                    <h3>Farinha de Mandioca</h3>
+                    <p>Farinha de mandioca processada com tecnologia moderna, mantendo o sabor genuíno e a qualidade do produto natural.</p>
+                    <span class="produto-tag">Tradição</span>
+                </div>
+                <div class="produto-card"><div class="produto-imagem"><img src="MIX-PARA-PAO-DE-QUEIJO-1-KG.png" alt="Mistura para Pão de Queijo" loading="lazy"></div>
+                    <h3>Mistura para Pão de Queijo</h3>
+                    <p>Cremosidade e praticidade com apenas <strong>3 ingredientes</strong>. Pão de queijo perfeito em minutos.</p>
+                    <span class="produto-tag">⭐ Destaque</span>
+                </div>
+                <div class="produto-card"><div class="produto-imagem"><img src="TAPIOCA-GRANULADA_MOCKUP-scaled.png" alt="Amidos Modificados &amp; Mix de Farinhas" loading="lazy"></div>
+                    <h3>Tapioca</h3>
+                    <p>Produzida a partir de amido de mandioca, nossa tapioca granulada apresenta grãos irregulares que proporcionam uma textura única e especial aos seus pratos.</p>
+                    <span class="produto-tag">B2B / Indústria</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FILIAIS ===== -->
+    <section id="filiais" class="section">
+        <div class="container">
+            <span class="section-tag">Onde Estamos</span>
+            <h2 class="section-title">Matriz e Filiais</h2>
+            <p class="section-subtitle">Do interior do Paraná para todo o Brasil e para o mundo. Conheça nossa matriz, centros de distribuição e o escritório internacional da Amifec.</p>
+
+            <div class="mapa-cobertura">
+                <div class="cobertura-stat"><strong>3</strong><span>Unidades fabris</span></div>
+                <div class="cobertura-stat"><strong>PR</strong><span>Todas no Paraná</span></div>
+                <div class="cobertura-stat"><strong>27</strong><span>Estados atendidos</span></div>
+                <div class="cobertura-stat"><strong>6</strong><span>Países exportados</span></div>
+            </div>
+
+            <div class="filiais-grid">
+                <div class="filial-card matriz">
+                    <div class="filial-badge">⭐ MATRIZ</div>
+                    <div class="filial-imagem">
+                        <img src="nova londrina.webp" alt="Matriz Amifec Alimentos - Nova Londrina-PR" loading="lazy">
+                    </div>
+                    <div class="filial-icone">🏭</div>
+                    <h3>Nova Londrina - PR</h3>
+                    <p class="filial-ano">Fundada em 2005 · Sede &amp; Fábrica Principal</p>
+                    <div class="filial-info">
+                        <p>Sede da empresa localizada em uma área de 96.800m², especializada na produção de polvilhos azedo e doce. Possui capacidade produtiva de 365.625kg mensal.</p>
+                        <p><strong>Produz:</strong></p>
+                        <p>Polvilho doce e polvilho azedo</p>
+                    </div>
+                </div>
+
+                <div class="filial-card nova">
+                    <div class="filial-badge novo">🌾 POLVILHEIRA</div>
+                    <div class="filial-imagem">
+                        <img src="cidade gaúcha.webp" alt="Filial Cidade Gaúcha - Amifec Polvilheira" loading="lazy">
+                    </div>
+                    <div class="filial-icone">🌽</div>
+                    <h3>Cidade Gaúcha - PR</h3>
+                    <p class="filial-ano">Filial · Unidade Polvilheira</p>
+                    <div class="filial-info">
+                        <p>Com 72.600m² de área, a primeira indústria da empresa responsável pelo processamento de cerca de 600 toneladas por dia de raiz.</p>
+                        <p><strong>Produz:</strong></p>
+                        <p>Fécula modificados</p>
+                    </div>
+                </div>
+
+                <div class="filial-card nova">
+                    <div class="filial-badge novo">🏭 FÁBRICA</div>
+                    <div class="filial-imagem">
+                        <img src="maria helena.webp" alt="Filial Maria Helena - Amifec" loading="lazy">
+                    </div>
+                    <div class="filial-icone">🏭</div>
+                    <h3>Maria Helena - PR</h3>
+                    <p class="filial-ano">Filial · Unidade Produtiva</p>
+                    <div class="filial-info">
+                        <p>A segunda planta industrial onde possui capacidade de produção de 400 ton/dia de raiz, com produção de fécula, misturas, pão de queijo e empacotados.</p>
+                        <p><strong>Produz:</strong></p>
+                        <p>Fécula, mix para pão de queijo e amido modificado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROCESSO DE PRODUÇÃO — FILIAL MARIA HELENA ===== -->
+    <section id="processo-mh" class="section section-alt">
+        <div class="container">
+            <span class="section-tag">Filial Maria Helena · Linha de Produção</span>
+            <h2 class="section-title">🏭 Processo de Produção em Maria Helena</h2>
+            <p class="section-subtitle">Acompanhe, passo a passo, como a raiz de mandioca chega até a embalagem final na unidade de Maria Helena (PR) — uma das três fábricas da Amifec Alimentos.</p>
+            <div class="processo-passos">
+                <div class="processo-passo">
+                    <div class="processo-img">
+                        <img src="separacao.webp" alt="Separação e lavagem da mandioca - Amifec" loading="lazy">
+                    </div>
+                    <div class="processo-texto">
+                        <p>O processo começa com o <strong>recebimento da mandioca</strong>: as raízes chegam diretamente dos produtores parceiros do noroeste do Paraná. Cada carga é pesada, identificada e passa por inspeção visual de qualidade. Em seguida, são encaminhadas para a etapa de <strong>seleção</strong>, onde colaboradores treinados separam manualmente as raízes próprias para a produção.</p>
+                    </div>
+                </div>
+                <div class="processo-passo processo-passo--reverse">
+                    <div class="processo-img">
+                        <img src="lavamento.webp" alt="Lavagem e descascamento das raízes - Amifec" loading="lazy">
+                    </div>
+                    <div class="processo-texto">
+                        <p>Na etapa de <strong>lavagem e descascamento</strong>, as raízes passam por tanques rotativos com água tratada e escovas mecânicas que removem terra, impurezas e a casca externa. A mandioca limpa é então <strong>triturada e ralada</strong> em raladores de alta rotação, liberando o amido contido nas células da raiz — etapa essencial para o rendimento da fécula.</p>
+                    </div>
+                </div>
+                <div class="processo-passo">
+                    <div class="processo-img">
+                        <img src="maquinas.webp" alt="Maquinário automatizado de envase - Amifec" loading="lazy">
+                    </div>
+                    <div class="processo-texto">
+                        <p>A massa segue para a <strong>extração do amido</strong>, passando por peneiras vibratórias e centrífugas que separam a fibra do leite de amido. O amido úmido entra em <strong>secadores flash</strong> e, após o rigoroso <strong>controle de qualidade</strong> do laboratório (com análises físico-químicas e microbiológicas conforme normas da ANVISA), passa pelo <strong>envase automatizado</strong> em sacos de 1 kg, 5 kg e 25 kg, com selagem térmica e código de rastreabilidade.</p>
+                    </div>
+                </div>
+                <div class="processo-passo processo-passo--reverse">
+                    <div class="processo-img">
+                        <img src="armazenamento.webp" alt="Armazenamento e expedição - Amifec" loading="lazy">
+                    </div>
+                    <div class="processo-texto">
+                        <p>Por fim, os pallets seguem para o <strong>armazenamento e expedição</strong>: o produto final é organizado em paletes identificados, mantido em ambiente controlado e despachado para abastecer o Centro-Oeste, o Sudeste e atender também à demanda de <strong>exportação</strong> para mais de 6 países.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ===== CLIENTES, IMPORTAÇÃO E EXPORTAÇÃO ===== -->
+    <section id="mercado" class="section">
+        <div class="container">
+            <span class="section-tag">Mercado</span>
+            <h2 class="section-title">🌐 Clientes e Exportação</h2>
+            <p class="section-subtitle">A Amifec atende mais de <strong>2.300 clientes ativos</strong> no Brasil e exporta para 6 países, levando o sabor paranaense para o mundo.</p>
+
+            <div class="mercado-stats">
+                <div class="mercado-stat"><strong>2.300+</strong><span>Clientes ativos no Brasil</span></div>
+                <div class="mercado-stat"><strong>27</strong><span>Estados atendidos</span></div>
+                <div class="mercado-stat"><strong>6</strong><span>Países de exportação</span></div>
+                <div class="mercado-stat"><strong>18%</strong><span>Da receita vem do exterior</span></div>
+            </div>
+
+            <div class="mercado-grid">
+                <div class="mercado-bloco">
+                    <h3>📤 Exportação</h3>
+                    <p>Atualmente, nossos produtos já estão presentes em mais de 434 cidades brasileiras e em diversos países, como:</p>
+                    <div class="paises-destaque">
+                        <h4>⭐ Principais destinos</h4>
+                        <div class="paises-chips">
+                            <span class="pais-chip">🇵🇹 Portugal</span>
+                            <span class="pais-chip">🇪🇸 Espanha</span>
+                            <span class="pais-chip">🇫🇷 França</span>
+                            <span class="pais-chip">🇩🇪 Alemanha</span>
+                            <span class="pais-chip">🇺🇸 Estados Unidos</span>
+                            <span class="pais-chip">🇯🇵 Japão</span>
+                            <span class="pais-chip">🇬🇧 Reino Unido</span>
+                            <span class="pais-chip">🇨🇦 Canadá</span>
+                        </div>
+                    </div>
+                    <details class="paises-mais">
+                        <summary>🌍 Ver todos os países (+ Europa e América do Sul)</summary>
+                        <div class="paises-grid">
+                            <div>
+                                <h5>🇪🇺 Europa</h5>
+                                <ul>
+                                    <li>🇮🇪 Irlanda</li>
+                                    <li>🇳🇱 Países Baixos</li>
+                                    <li>🇧🇪 Bélgica</li>
+                                    <li>🇨🇭 Suíça</li>
+                                    <li>🇮🇹 Itália</li>
+                                    <li>🇦🇹 Áustria</li>
+                                    <li>🇱🇺 Luxemburgo</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>🌎 América do Sul</h5>
+                                <ul>
+                                    <li>🇵🇾 Paraguai</li>
+                                    <li>🇧🇴 Bolívia</li>
+                                    <li>🇨🇱 Chile</li>
+                                    <li>🇨🇴 Colômbia</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="paises-obs">E outros mercados em expansão.</p>
+                    </details>
+                </div>
+            </div>
+
+            <div class="mercado-clientes">
+                <h3>🏢 Principais Clientes no Brasil</h3>
+                <div class="clientes-logos">
+                    <div class="cliente-logo"><img src="Codipsa.logo.png" alt="Codipsa" loading="lazy" onerror="this.parentNode.classList.add('cliente-logo--text');this.parentNode.textContent='Codipsa'"></div>
+                    <div class="cliente-logo"><img src="Logo_assai.png" alt="Assaí" loading="lazy" onerror="this.parentNode.classList.add('cliente-logo--text');this.parentNode.textContent='Assaí'"></div>
+                    <div class="cliente-logo"><img src="forno logo.jpg" alt="Forno de Minas" loading="lazy" onerror="this.parentNode.classList.add('cliente-logo--text');this.parentNode.textContent='Forno de Minas'"></div>
+                    <div class="cliente-logo"><img src="akio.logo.png" alt="Akio" loading="lazy" onerror="this.parentNode.classList.add('cliente-logo--text');this.parentNode.textContent='Akio'"></div>
+                    <div class="cliente-logo"><img src="frimesa-logo.png" alt="Frimesa" loading="lazy" onerror="this.parentNode.classList.add('cliente-logo--text');this.parentNode.textContent='Frimesa'"></div>
+                    <div class="cliente-logo"><img src="pioneiro.svg" alt="Pioneiro" loading="lazy" onerror="this.parentNode.classList.add('cliente-logo--text');this.parentNode.textContent='Pioneiro'"></div>
+                    <div class="cliente-logo"><img src="JBS_S.A.png" alt="JBS" loading="lazy" onerror="this.parentNode.classList.add('cliente-logo--text');this.parentNode.textContent='JBS'"></div>
+                    <div class="cliente-logo"><img src="GM.logo.jfif" alt="Gostinho Mineiro" loading="lazy" onerror="this.parentNode.classList.add('cliente-logo--text');this.parentNode.textContent='Gostinho Mineiro'"></div>
+                    <div class="cliente-logo"><img src="Kerus.png" alt="Kerus" loading="lazy" onerror="this.parentNode.classList.add('cliente-logo--text');this.parentNode.textContent='Kerus'"></div>
+                    <div class="cliente-logo"><img src="Grupomateus_logo.jpg" alt="Armazém Mateus" loading="lazy" onerror="this.parentNode.classList.add('cliente-logo--text');this.parentNode.textContent='Armazém Mateus'"></div>
+                    <div class="cliente-logo"><img src="seu ninico.png" alt="Seu Ninico" loading="lazy" onerror="this.parentNode.classList.add('cliente-logo--text');this.parentNode.textContent='Seu Ninico'"></div>
+                    <div class="cliente-logo"><img src="Friato.logo.png" alt="Friato" loading="lazy" onerror="this.parentNode.classList.add('cliente-logo--text');this.parentNode.textContent='Friato'"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- ===== FATURAMENTO + DRE ===== -->
+    <section id="faturamento" class="section section-alt">
+        <div class="container">
+            <span class="section-tag">Resultados Econômicos</span>
+            <h2 class="section-title">💹 Faturamento e DRE</h2>
+            <p class="section-subtitle">Demonstração do Resultado do Exercício (DRE) — exemplo didático.</p>
+            <div class="didatico-aviso">
+                <span class="didatico-badge">Dados ilustrativos</span>
+                <strong>Aviso:</strong> Os valores apresentados nesta seção são <strong>estimativas didáticas</strong>
+                criadas para fins do trabalho escolar de Administração, com base em referências de mercado para
+                indústrias alimentícias de médio porte. Dados financeiros reais da Amifec Alimentos Ltda não são
+                divulgados publicamente.
+            </div>
+
+            <div class="texto-bloco">
+                <p>A Amifec Alimentos registrou, no exercício de referência, um <strong>faturamento bruto anual estimado em R$ 48,2 milhões</strong>, representando um crescimento de <strong>+12,4% em relação a 2023</strong>. Após a dedução de impostos sobre vendas e devoluções, a <strong>receita líquida</strong> atingiu cerca de <strong>R$ 41,5 milhões</strong>, refletindo a expansão da base de clientes no Brasil e o avanço das operações de exportação.</p>
+                <p>O <strong>lucro líquido</strong> alcançou aproximadamente <strong>R$ 6,8 milhões</strong>, equivalente a uma <strong>margem líquida de 16,4%</strong> — patamar competitivo dentro do setor de derivados de mandioca. Esse resultado foi sustentado pela eficiência operacional das três unidades fabris, pela negociação direta com produtores rurais parceiros e pela diversificação do portfólio (polvilho azedo, fécula, amido modificado e mix para pão de queijo).</p>
+                <p>No campo dos investimentos, foram aplicados cerca de <strong>R$ 3,1 milhões em CAPEX</strong>, destinados à modernização do parque industrial, automação de linhas de envase e ampliação da capacidade de secagem na filial de Maria Helena. Esse esforço consolida a estratégia de longo prazo da empresa: crescer com qualidade, produtividade e responsabilidade socioambiental.</p>
+            </div>
+
+            <p class="dre-obs" style="text-align:center;margin-top:1.5rem;">* Valores estimados em caráter didático para fins do trabalho escolar,
+            com base em referências de mercado para indústrias alimentícias de médio porte.</p>
+        </div>
+    </section>
+
+    <!-- ===== 7. ORGANOGRAMA ===== -->
+    <section id="organograma" class="section section-alt">
+        <div class="container">
+            <span class="section-tag">Hierarquia</span>
+            <h2 class="section-title">🏛️ Organograma</h2>
+            <p class="section-subtitle">Estrutura hierárquica e administrativa da Amifec Alimentos —
+            cada nível com responsabilidades claras e integradas.</p>
+
+            <div class="organograma-novo">
+                <!-- Nível 1: Diretoria -->
+                <div class="org-nivel-novo nivel-1">
+                    <div class="org-card org-card-top">
+                        <div class="org-avatar">👔</div>
+                        <div class="org-cargo">Diretoria Executiva</div>
+                        <div class="org-nome">Direção · Amifec Alimentos Ltda</div>
+                        <div class="org-desc">Define a estratégia e visão de longo prazo da empresa.</div>
+                    </div>
+                </div>
+                <div class="org-conector"></div>
+
+                <!-- Nível 2: Gerências -->
+                <div class="org-nivel-novo nivel-2">
+                    <div class="org-card org-card-mid">
+                        <div class="org-avatar">📋</div>
+                        <div class="org-cargo">Gerência Administrativa</div>
+                        <div class="org-desc">Coordena finanças, RH e processos internos.</div>
+                    </div>
+                    <div class="org-card org-card-mid">
+                        <div class="org-avatar">🏭</div>
+                        <div class="org-cargo">Gerência Industrial</div>
+                        <div class="org-desc">Responsável pela produção e qualidade.</div>
+                    </div>
+                    <div class="org-card org-card-mid">
+                        <div class="org-avatar">🛒</div>
+                        <div class="org-cargo">Gerência Comercial</div>
+                        <div class="org-desc">Vendas, marketing e exportação.</div>
+                    </div>
+                </div>
+                <div class="org-conector"></div>
+
+                <!-- Nível 3: Departamentos operacionais -->
+                <div class="org-nivel-novo nivel-3">
+                    <div class="org-card org-card-base"><div class="org-avatar-sm">💰</div><strong>Financeiro</strong><span>Contas, fluxo de caixa</span></div>
+                    <div class="org-card org-card-base"><div class="org-avatar-sm">👥</div><strong>RH</strong><span>Pessoas e cultura</span></div>
+                    <div class="org-card org-card-base"><div class="org-avatar-sm">📦</div><strong>Recebimento</strong><span>Insumos e fornecedores</span></div>
+                    <div class="org-card org-card-base"><div class="org-avatar-sm">⚙️</div><strong>Produção</strong><span>Fábrica e turnos</span></div>
+                    <div class="org-card org-card-base"><div class="org-avatar-sm">🔬</div><strong>Qualidade</strong><span>Laboratório e auditoria</span></div>
+                    <div class="org-card org-card-base"><div class="org-avatar-sm">📊</div><strong>Estoque</strong><span>Armazenagem e controle</span></div>
+                    <div class="org-card org-card-base"><div class="org-avatar-sm">🛒</div><strong>Vendas</strong><span>Carteira nacional</span></div>
+                    <div class="org-card org-card-base"><div class="org-avatar-sm">📣</div><strong>Marketing</strong><span>Marca e redes sociais</span></div>
+                    <div class="org-card org-card-base"><div class="org-avatar-sm">🌍</div><strong>Exportação</strong><span>Comércio exterior</span></div>
+                    <div class="org-card org-card-base"><div class="org-avatar-sm">🚚</div><strong>Logística</strong><span>Frota e entregas</span></div>
+                </div>
+
+                <div class="org-legenda">
+                    <span><i class="leg leg-top"></i>Direção</span>
+                    <span><i class="leg leg-mid"></i>Gerência</span>
+                    <span><i class="leg leg-base"></i>Operacional</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 4. DEPARTAMENTOS ===== -->
+    <section id="departamentos" class="section">
+        <div class="container">
+            <span class="section-tag">Estrutura</span>
+            <h2 class="section-title">Nossos Departamentos</h2>
+            <p class="section-subtitle">Conheça os setores que mantêm a Amifec funcionando todos os dias.</p>
+            <div class="dept-grid">
+                <a href="#financeiro" class="dept-card">
+                    <div class="dept-icon"><i data-lucide="wallet" style="width:42px;height:42px;stroke-width:1.6;"></i></div>
+                    <h3>Financeiro</h3>
+                    <p>Responsável pelo controle de contas, fluxo de caixa, planejamento e saúde financeira da empresa.</p>
+                </a>
+                <a href="#recebimento" class="dept-card">
+                    <div class="dept-icon"><i data-lucide="package-check" style="width:42px;height:42px;stroke-width:1.6;"></i></div>
+                    <h3>Recebimento</h3>
+                    <p>Recebe mercadorias, confere notas fiscais e garante a qualidade dos produtos que entram na empresa.</p>
+                </a>
+                <a href="#producao" class="dept-card">
+                    <div class="dept-icon"><i data-lucide="factory" style="width:42px;height:42px;stroke-width:1.6;"></i></div>
+                    <h3>Produção</h3>
+                    <p>Cuida da fabricação e processamento dos alimentos, seguindo rígidos padrões de qualidade e higiene.</p>
+                </a>
+                <a href="#rh" class="dept-card">
+                    <div class="dept-icon"><i data-lucide="users" style="width:42px;height:42px;stroke-width:1.6;"></i></div>
+                    <h3>Recursos Humanos</h3>
+                    <p>Realiza contratações, treinamentos e cuida do bem-estar dos colaboradores da empresa.</p>
+                </a>
+                <a href="#vendas" class="dept-card">
+                    <div class="dept-icon"><i data-lucide="shopping-cart" style="width:42px;height:42px;stroke-width:1.6;"></i></div>
+                    <h3>Vendas</h3>
+                    <p>Negocia produtos com clientes, busca novas oportunidades e impulsiona o crescimento da empresa.</p>
+                </a>
+                <a href="#estoque" class="dept-card">
+                    <div class="dept-icon"><i data-lucide="boxes" style="width:42px;height:42px;stroke-width:1.6;"></i></div>
+                    <h3>Estoque</h3>
+                    <p>Organiza e controla os produtos armazenados, evitando perdas e garantindo disponibilidade.</p>
+                </a>
+                <a href="#logistica" class="dept-card">
+                    <div class="dept-icon"><i data-lucide="truck" style="width:42px;height:42px;stroke-width:1.6;"></i></div>
+                    <h3>Logística</h3>
+                    <p>Planeja e realiza as entregas, garantindo que os produtos cheguem no tempo certo aos clientes.</p>
+                </a>
+                <a href="#atendimento" class="dept-card">
+                    <div class="dept-icon"><i data-lucide="headset" style="width:42px;height:42px;stroke-width:1.6;"></i></div>
+                    <h3>Atendimento ao Cliente</h3>
+                    <p>Oferece suporte, esclarece dúvidas e mantém um relacionamento próximo com os consumidores.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 5. DEPARTAMENTO FINANCEIRO ===== -->
+    <section id="financeiro" class="section section-alt">
+        <div class="container">
+            <span class="section-tag">Em Detalhes</span>
+            <h2 class="section-title">Departamento Financeiro</h2>
+            <div class="detalhe-content">
+                <div class="detalhe-icon-big">💰</div>
+                <div class="detalhe-text">
+                    <p>O <strong>Departamento Financeiro</strong> é o coração administrativo da Amifec Alimentos.
+                    Ele cuida de toda a movimentação de dinheiro da empresa e garante que os recursos sejam usados
+                    de forma estratégica e responsável.</p>
+                    <div class="detalhe-grid">
+                        <div class="detalhe-item">
+                            <h4>📥 Contas a Pagar e Receber</h4>
+                            <p>Controla pagamentos a fornecedores e recebimentos de clientes, mantendo tudo em dia.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>📊 Organização de Custos</h4>
+                            <p>Analisa gastos, busca reduzir desperdícios e melhorar a margem de lucro.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>💵 Fluxo de Caixa</h4>
+                            <p>Acompanha entradas e saídas de dinheiro, garantindo o equilíbrio financeiro.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>📈 Planejamento Financeiro</h4>
+                            <p>Planeja investimentos, metas e o futuro econômico da empresa.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>🏦 Relacionamento Bancário</h4>
+                            <p>Negocia com bancos, conquista melhores taxas e administra empréstimos.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>📋 Relatórios Gerenciais</h4>
+                            <p>Gera relatórios para a diretoria tomar decisões com base em dados reais.</p>
+                        </div>
+                    </div>
+                    <p class="destaque-box">⭐ <strong>Importância:</strong> Sem o setor financeiro, a empresa não
+                    conseguiria crescer, investir, pagar funcionários ou manter suas operações funcionando.
+                    É a base de toda a saúde organizacional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 6. DEPARTAMENTO DE RECEBIMENTO ===== -->
+    <section id="recebimento" class="section">
+        <div class="container">
+            <span class="section-tag">Em Detalhes</span>
+            <h2 class="section-title">Departamento de Recebimento</h2>
+            <div class="detalhe-content reverse">
+                <div class="detalhe-icon-big">📦</div>
+                <div class="detalhe-text">
+                    <p>O <strong>Departamento de Recebimento</strong> é a porta de entrada dos produtos na Amifec.
+                    Toda mercadoria que chega passa por este setor antes de seguir para o estoque ou produção,
+                    garantindo que apenas produtos de qualidade entrem na empresa.</p>
+                    <div class="detalhe-grid">
+                        <div class="detalhe-item">
+                            <h4>🚛 Recebimento de Mercadorias</h4>
+                            <p>Recebe todos os produtos enviados pelos fornecedores com organização e agilidade.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>📄 Conferência de Notas Fiscais</h4>
+                            <p>Verifica se a nota fiscal corresponde aos produtos recebidos, evitando erros.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>✅ Controle de Qualidade</h4>
+                            <p>Analisa se os produtos estão em boas condições, dentro da validade e padrão exigido.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>🗄️ Organização do Estoque</h4>
+                            <p>Encaminha os produtos ao local correto, mantendo o estoque sempre organizado.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>🤝 Comunicação com Fornecedores</h4>
+                            <p>Mantém contato direto com fornecedores para resolver problemas e garantir parcerias.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>📝 Registro no Sistema</h4>
+                            <p>Lança todas as entradas no sistema de gestão para controle total do inventário.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DEPARTAMENTO DE PRODUÇÃO ===== -->
+    <section id="producao" class="section section-alt">
+        <div class="container">
+            <span class="section-tag">Em Detalhes</span>
+            <h2 class="section-title">Departamento de Produção</h2>
+            <div class="detalhe-content">
+                <div class="detalhe-icon-big">🏭</div>
+                <div class="detalhe-text">
+                    <p>O <strong>Departamento de Produção</strong> é o <em>coração industrial</em> da Amifec.
+                    É aqui que a matéria-prima vira produto acabado, transformando milho, mandioca e leite
+                    em alimentos que chegam à mesa do brasileiro.</p>
+                    <div class="detalhe-grid">
+                        <div class="detalhe-item">
+                            <h4>⚙️ Planejamento de Produção</h4>
+                            <p>Define o que produzir, quanto e em qual ordem, balanceando demanda e estoque (PCP).</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>🧪 Mistura e Processamento</h4>
+                            <p>Combina os 3 ingredientes na proporção exata, garantindo a famosa cremosidade Amifec.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>📦 Envase e Embalagem</h4>
+                            <p>Linhas automatizadas embalam, datam e pesam cada unidade com precisão.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>🔬 Controle de Qualidade</h4>
+                            <p>Cada lote é testado em laboratório antes de seguir para o estoque ou expedição.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>🧹 Higienização Industrial</h4>
+                            <p>Limpeza CIP entre lotes evita contaminação e mantém o padrão SIF/ANVISA.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>📊 Indicadores (KPIs)</h4>
+                            <p>OEE, refugo, produtividade por turno — métricas que orientam a melhoria contínua.</p>
+                        </div>
+                    </div>
+                    <p class="destaque-box">⭐ <strong>Importância:</strong> sem Produção, a empresa não tem
+                    produto para vender. É o setor que <em>gera valor</em> a partir das matérias-primas e
+                    sustenta todos os outros departamentos da Amifec.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DEPARTAMENTO DE RECURSOS HUMANOS ===== -->
+    <section id="rh" class="section">
+        <div class="container">
+            <span class="section-tag">Em Detalhes</span>
+            <h2 class="section-title">Departamento de Recursos Humanos</h2>
+            <div class="detalhe-content reverse">
+                <div class="detalhe-icon-big">👥</div>
+                <div class="detalhe-text">
+                    <p>O <strong>Departamento de Recursos Humanos</strong> cuida do <em>maior ativo da Amifec</em>:
+                    suas pessoas. São os RH que tornam possível ter mais de 200 colaboradores engajados, treinados
+                    e felizes — base para qualquer empresa que quer crescer.</p>
+                    <div class="detalhe-grid">
+                        <div class="detalhe-item">
+                            <h4>📝 Recrutamento e Seleção</h4>
+                            <p>Atrai talentos, conduz entrevistas e seleciona profissionais alinhados à cultura.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>🎓 Treinamento e Desenvolvimento</h4>
+                            <p>Capacitação contínua, parcerias com Senai e bolsas de estudo para colaboradores.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>💰 Departamento Pessoal</h4>
+                            <p>Folha de pagamento, férias, 13º, encargos sociais e benefícios em dia.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>🏥 Saúde e Segurança no Trabalho</h4>
+                            <p>CIPA, EPIs, exames periódicos e protocolos de prevenção de acidentes.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>📈 Avaliação de Desempenho</h4>
+                            <p>Feedback estruturado, planos de carreira e reconhecimento por mérito.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>💚 Clima e Cultura</h4>
+                            <p>Pesquisas de clima, eventos internos e ações de bem-estar para a equipe.</p>
+                        </div>
+                    </div>
+                    <p class="destaque-box">⭐ <strong>Importância:</strong> a Amifec mantém uma força de trabalho
+                    majoritariamente local, distribuída nas 3 unidades do Paraná (Nova Londrina, Cidade Gaúcha
+                    e Maria Helena). É o RH que cuida da capacitação, retenção e bem-estar dessas pessoas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DEPARTAMENTO DE VENDAS ===== -->
+    <section id="vendas" class="section section-alt">
+        <div class="container">
+            <span class="section-tag">Em Detalhes</span>
+            <h2 class="section-title">Departamento de Vendas</h2>
+            <div class="detalhe-content">
+                <div class="detalhe-icon-big">🛒</div>
+                <div class="detalhe-text">
+                    <p>O <strong>Departamento de Vendas</strong> é responsável por transformar produto
+                    em receita. Atende o mercado nacional e participa de <strong>exportações</strong>
+                    para compradores internacionais — sempre com foco em <em>relacionamento de longo prazo</em>.</p>
+                    <div class="detalhe-grid">
+                        <div class="detalhe-item">
+                            <h4>🎯 Prospecção de Clientes</h4>
+                            <p>Identifica novos mercados, redes de varejo e oportunidades B2B.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>📞 Carteira de Clientes</h4>
+                            <p>Acompanha pedidos recorrentes e fideliza compradores estratégicos.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>💼 Negociação Comercial</h4>
+                            <p>Define preços, prazos, condições de pagamento e fechamento de contratos.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>📊 Metas e Comissões</h4>
+                            <p>Cada vendedor tem meta clara e comissionamento atrelado ao resultado.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>🌎 Exportação</h4>
+                            <p>Time dedicado ao comércio exterior — câmbio, despacho aduaneiro e parceiros internacionais.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>📈 Previsão de Demanda</h4>
+                            <p>Alimenta a Produção e o Estoque com forecasts de vendas mês a mês.</p>
+                        </div>
+                    </div>
+                    <p class="destaque-box">⭐ <strong>Importância:</strong> é o time de Vendas que gera
+                    a receita bruta da empresa — combustível que faz toda a operação funcionar. Sem vendas,
+                    não há produção, salários nem investimento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DEPARTAMENTO DE ESTOQUE ===== -->
+    <section id="estoque" class="section">
+        <div class="container">
+            <span class="section-tag">Em Detalhes</span>
+            <h2 class="section-title">Departamento de Estoque</h2>
+            <div class="detalhe-content reverse">
+                <div class="detalhe-icon-big">📊</div>
+                <div class="detalhe-text">
+                    <p>O <strong>Departamento de Estoque</strong> é o "guardião" da Amifec: cuida de toda
+                    a matéria-prima e produto acabado, evitando perdas e garantindo que <em>nunca falte
+                    nada</em> nas linhas de produção ou no envio aos clientes.</p>
+                    <div class="detalhe-grid">
+                        <div class="detalhe-item">
+                            <h4>📥 Recebimento e Endereçamento</h4>
+                            <p>Cada produto vai para um endereço específico no armazém (sistema WMS).</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>🔄 Sistema FIFO/PEPS</h4>
+                            <p>"Primeiro que entra, primeiro que sai" — evita produtos vencendo no estoque.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>📋 Inventário Cíclico</h4>
+                            <p>Contagens periódicas garantem que o sistema bate com o estoque físico.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>❄️ Conservação Adequada</h4>
+                            <p>Câmaras frias, controle de umidade e temperatura para cada tipo de produto.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>⚠️ Curva ABC</h4>
+                            <p>Produtos A (mais vendidos) ficam em locais de fácil acesso; C, no fundo.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>📦 Separação de Pedidos</h4>
+                            <p>Picking organizado prepara as cargas que serão enviadas pela Logística.</p>
+                        </div>
+                    </div>
+                    <p class="destaque-box">⭐ <strong>Importância:</strong> uma gestão de estoque ruim
+                    custa caro — produto vencido vira prejuízo, falta de produto vira venda perdida.
+                    Por isso o controle rigoroso é vital para a operação da Amifec.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DEPARTAMENTO DE LOGÍSTICA ===== -->
+    <section id="logistica" class="section section-alt">
+        <div class="container">
+            <span class="section-tag">Em Detalhes</span>
+            <h2 class="section-title">Departamento de Logística</h2>
+            <div class="detalhe-content">
+                <div class="detalhe-icon-big">🚚</div>
+                <div class="detalhe-text">
+                    <p>O <strong>Departamento de Logística</strong> é a "ponte" que conecta a fábrica
+                    da Amifec aos clientes espalhados pelo Brasil e ao mercado externo, sempre com foco
+                    em <strong>pontualidade e qualidade</strong> na entrega.</p>
+                    <div class="detalhe-grid">
+                        <div class="detalhe-item">
+                            <h4>🗺️ Roteirização Inteligente</h4>
+                            <p>Software calcula a rota mais eficiente, economizando combustível e tempo.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>🚛 Gestão de Frota</h4>
+                            <p>Frota própria e parceiros terceirizados garantem capacidade de transporte para todo o Brasil.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>📅 Programação de Entregas</h4>
+                            <p>Janelas de descarga combinadas com os clientes (especialmente grandes varejos).</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>📡 Rastreamento em Tempo Real</h4>
+                            <p>Telemetria e GPS em todos os veículos — cliente sabe onde está sua mercadoria.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>📑 Documentação Fiscal</h4>
+                            <p>NF-e, CT-e, MDF-e — toda documentação eletrônica integrada ao ERP.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>♻️ Logística Reversa</h4>
+                            <p>Retorno de embalagens recicláveis e produtos com problemas (trocas/avarias).</p>
+                        </div>
+                    </div>
+                    <p class="destaque-box">⭐ <strong>Importância:</strong> de nada adianta produzir bem
+                    se o produto não chega ao cliente. A Logística garante que o esforço da Produção, Estoque
+                    e Vendas se transforme em <strong>satisfação real do consumidor</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DEPARTAMENTO DE ATENDIMENTO AO CLIENTE ===== -->
+    <section id="atendimento" class="section">
+        <div class="container">
+            <span class="section-tag">Em Detalhes</span>
+            <h2 class="section-title">Atendimento ao Cliente (SAC)</h2>
+            <div class="detalhe-content reverse">
+                <div class="detalhe-icon-big">📞</div>
+                <div class="detalhe-text">
+                    <p>O <strong>Atendimento ao Cliente (SAC)</strong> é a voz da Amifec junto aos consumidores
+                    e parceiros. Resolve problemas, ouve sugestões e mantém um relacionamento próximo
+                    com os clientes nacionais e internacionais.</p>
+                    <div class="detalhe-grid">
+                        <div class="detalhe-item">
+                            <h4>💬 Múltiplos Canais</h4>
+                            <p>Telefone (44) 3432-1080, e-mail amifec@amifec.com.br, Instagram e LinkedIn (@amifec.alimentos) e site amifec.com.br.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>⏱️ Atendimento Estruturado</h4>
+                            <p>Cada solicitação é registrada, encaminhada e respondida pelos canais oficiais da empresa.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>🛠️ Resolução de Problemas</h4>
+                            <p>Trocas, devoluções, reclamações sobre qualidade — tudo registrado e tratado.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>👂 Ouvidoria</h4>
+                            <p>Canal para sugestões de melhoria e feedback de produto direto do consumidor.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>📊 NPS e Pesquisas</h4>
+                            <p>Avalia satisfação após cada interação e gera insights para outros setores.</p>
+                        </div>
+                        <div class="detalhe-item">
+                            <h4>📚 Base de Conhecimento</h4>
+                            <p>FAQ, vídeos e receitas para que o cliente tire dúvidas sozinho quando quiser.</p>
+                        </div>
+                    </div>
+                    <p class="destaque-box">⭐ <strong>Importância:</strong> conquistar um cliente novo
+                    custa <strong>muito mais</strong> do que manter um atual. O SAC é a "linha de frente"
+                    da fidelização — fundamental para manter a confiança e a satisfação dos clientes da Amifec.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- ===== VISÃO DE 10 ANOS ===== -->
+    <section id="visao10" class="section">
+        <div class="container">
+            <span class="section-tag">Projeção</span>
+            <h2 class="section-title">🚀 Visão Estratégica de 10 Anos</h2>
+            <p class="section-subtitle">Exercício didático: projeção estratégica hipotética para os próximos
+            10 anos, aplicando conceitos de planejamento de longo prazo estudados em Administração.</p>
+            <div class="didatico-aviso">
+                <span class="didatico-badge">Projeção didática</span>
+                <strong>Aviso:</strong> Esta seção é uma <strong>projeção estratégica hipotética</strong>
+                elaborada para fins do trabalho escolar. Não representa metas oficiais ou planos públicos
+                da Amifec Alimentos Ltda.
+            </div>
+
+            <div class="visao-timeline">
+                <div class="visao-item">
+                    <div class="visao-ano">2026 – 2028</div>
+                    <h4>🏭 Expansão Industrial</h4>
+                    <p>Construção da <strong>segunda planta industrial</strong> no Mato Grosso do Sul,
+                    aumentando em 70% a capacidade produtiva e reduzindo custos logísticos para o Centro-Oeste.</p>
+                </div>
+                <div class="visao-item">
+                    <div class="visao-ano">2028 – 2030</div>
+                    <h4>🌍 Internacionalização</h4>
+                    <p>Dobrar o número de países atendidos — de 6 para <strong>12 destinos</strong> —
+                    com escritório comercial em Lisboa para coordenar a Europa e África lusófona.</p>
+                </div>
+                <div class="visao-item">
+                    <div class="visao-ano">2030 – 2032</div>
+                    <h4>💻 Indústria 4.0</h4>
+                    <p>Implantação total de IoT, manutenção preditiva e ERP integrado.
+                    Meta: <strong>+40% de produtividade</strong> com a mesma estrutura.</p>
+                </div>
+                <div class="visao-item">
+                    <div class="visao-ano">2032 – 2034</div>
+                    <h4>🌱 Carbono Neutro</h4>
+                    <p>Energia 100% renovável (solar + biomassa), zero efluente para a natureza
+                    e selo <strong>Carbono Neutro até 2034</strong>.</p>
+                </div>
+                <div class="visao-item">
+                    <div class="visao-ano">2035</div>
+                    <h4>🏆 Top 10 Nacional</h4>
+                    <p>Estar entre as <strong>10 maiores indústrias alimentícias</strong> de capital
+                    fechado do Brasil, com faturamento projetado de <strong>R$ 220 milhões/ano</strong>.</p>
+                </div>
+            </div>
+
+            <div class="visao-metas">
+                <div class="meta-card"><strong>R$ 220 mi</strong><span>Faturamento projetado em 2035</span></div>
+                <div class="meta-card"><strong>500+</strong><span>Colaboradores diretos</span></div>
+                <div class="meta-card"><strong>12 países</strong><span>De exportação</span></div>
+                <div class="meta-card"><strong>100%</strong><span>Energia renovável</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DIFERENCIAIS ===== -->
+    <section id="diferenciais" class="section section-alt">
+        <div class="container">
+            <span class="section-tag">Por que escolher a Amifec</span>
+            <h2 class="section-title">Nossos Diferenciais</h2>
+            <p class="section-subtitle">O que faz da Amifec Alimentos uma empresa única no mercado.</p>
+            <div class="diferenciais-grid">
+                <div class="diferencial-card">
+                    <div class="diferencial-num">01</div>
+                    <h3>🏆 Tradição Comprovada</h3>
+                    <p>Mais de 20 anos no mercado (desde 2005), com história sólida e reputação consolidada
+                    no setor de fabricação de amidos e féculas vegetais.</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="diferencial-num">02</div>
+                    <h3>✅ Controle de Qualidade</h3>
+                    <p>Todos os produtos passam por rigoroso controle de qualidade, com foco em
+                    pureza dos ingredientes e padronização do resultado final.</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="diferencial-num">03</div>
+                    <h3>🏭 Infraestrutura de Primeira Linha</h3>
+                    <p>Parque industrial moderno em Nova Londrina-PR, com investimento contínuo em
+                    maquinários de última geração e processos otimizados.</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="diferencial-num">04</div>
+                    <h3>👥 Equipe Capacitada</h3>
+                    <p>Pessoal treinado e dedicado, que faz da tradição Amifec algo vivo todos os
+                    dias, do chão de fábrica ao atendimento ao cliente.</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="diferencial-num">05</div>
+                    <h3>🧑‍🍳 Só 3 Ingredientes</h3>
+                    <p>Praça marca: cremosidade e praticidade com apenas <strong>3 ingredientes</strong>.
+                    Sabor caseiro com a confiança de quem entende do assunto.</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="diferencial-num">06</div>
+                    <h3>🌽 Matéria-prima Selecionada</h3>
+                    <p>Trabalhamos com matéria-prima criteriosamente selecionada, transformando
+                    o que é natural em ingredientes essenciais para a cozinha brasileira.</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="diferencial-num">07</div>
+                    <h3>📱 Presença Digital</h3>
+                    <p>Mais de 13 mil seguidores somando Instagram, Facebook e LinkedIn —
+                    relacionamento próximo com clientes em todo o Brasil.</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="diferencial-num">08</div>
+                    <h3>🌎 Do Paraná para o Mundo</h3>
+                    <p>Origem orgulhosamente paranaense, com produtos que alcançam indústrias,
+                    panificadoras e lares em todo o território nacional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== POSICIONAMENTO PÚBLICO ===== -->
+    <section id="depoimentos" class="section">
+        <div class="container">
+            <span class="section-tag">Posicionamento</span>
+            <h2 class="section-title">Como a Amifec se Apresenta</h2>
+            <p class="section-subtitle">Trechos do posicionamento público da empresa, baseados em informações
+            disponíveis em suas redes sociais e perfis comerciais oficiais.</p>
+            <div class="depoimentos-grid">
+                <div class="depoimento-card">
+                    <div class="depoimento-aspas">"</div>
+                    <p>Indústria Brasileira de Alimentos · Cremosidade, praticidade e só 3 ingredientes —
+                    o jeito Amifec de pôr qualidade na mesa do brasileiro.</p>
+                    <div class="depoimento-autor">
+                        <div class="autor-avatar">🌽</div>
+                        <div>
+                            <strong>Amifec Alimentos</strong>
+                            <span>Posicionamento oficial</span>
+                        </div>
+                    </div>
+                    <div class="estrelas">📱 Redes sociais</div>
+                </div>
+                <div class="depoimento-card">
+                    <div class="depoimento-aspas">"</div>
+                    <p>Especializada na produção de amidos, féculas e derivados de mandioca. Forte controle
+                    de qualidade em todas as etapas de produção.</p>
+                    <div class="depoimento-autor">
+                        <div class="autor-avatar">🏭</div>
+                        <div>
+                            <strong>Amifec Alimentos Ltda</strong>
+                            <span>Perfil corporativo</span>
+                        </div>
+                    </div>
+                    <div class="estrelas">💼 LinkedIn</div>
+                </div>
+                <div class="depoimento-card">
+                    <div class="depoimento-aspas">"</div>
+                    <p>Empresa sólida com mais de duas décadas de experiência, infraestrutura moderna e
+                    foco em produtos de alta qualidade — clientes nacionais e internacionais.</p>
+                    <div class="depoimento-autor">
+                        <div class="autor-avatar">🌎</div>
+                        <div>
+                            <strong>Amifec Alimentos</strong>
+                            <span>Descrição comercial</span>
+                        </div>
+                    </div>
+                    <div class="estrelas">🌐 amifec.com.br</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section section-alt">
+        <div class="container">
+            <span class="section-tag">Dúvidas</span>
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-pergunta">
+                        <span>🤔 Qual a área de atuação da Amifec Alimentos?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>A Amifec atua no setor de <strong>fabricação de amidos e féculas de vegetais</strong>,
+                        sendo referência no segmento de <strong>derivados de mandioca</strong>. A linha inclui
+                        féculas, polvilho doce e azedo, farinha de mandioca, mistura para pão de queijo e
+                        amidos modificados para indústria, panificadoras e food service.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-pergunta">
+                        <span>🚚 Como funcionam as entregas?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>A Amifec opera com logística estruturada para atender o mercado nacional e
+                        internacional, mantendo o controle de qualidade dos produtos durante todo o transporte.
+                        Prazos e condições são acordados conforme cada pedido e região de destino.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-pergunta">
+                        <span>✅ Os produtos possuem certificação?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Sim! Todos os nossos produtos seguem as normas da ANVISA e do Ministério da Agricultura,
+                        com controle de qualidade em todas as etapas do processo.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-pergunta">
+                        <span>🌱 A empresa tem práticas sustentáveis?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>A Amifec foca no controle de qualidade em todas as etapas de produção e na valorização
+                        da matéria-prima regional (mandioca paranaense), trabalhando com produtores locais e
+                        buscando práticas responsáveis na cadeia produtiva.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-pergunta">
+                        <span>💼 Como me tornar um cliente?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Basta entrar em contato pelo formulário desta página ou pelos nossos canais de atendimento.
+                        Nossa equipe comercial fará uma visita e apresentará todas as condições.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RECONHECIMENTO ===== -->
+    <section id="sustentabilidade" class="section">
+        <div class="container">
+            <span class="section-tag">Reconhecimento</span>
+            <h2 class="section-title">🌟 Amifec na Prática</h2>
+            <p class="section-subtitle">Indicadores ilustrativos da atuação da Amifec — usados como exemplo
+            didático para discussão do impacto social e econômico de uma indústria de alimentos.</p>
+
+            <div class="didatico-aviso">
+                <span class="didatico-badge">Dados ilustrativos</span>
+                <strong>Aviso:</strong> Os números a seguir são <strong>estimativas didáticas</strong> que
+                ilustram conceitos do trabalho. Dados públicos confirmados sobre a Amifec: fundada em 2005,
+                3 unidades fabris no Paraná, entre 200 e 500 colaboradores, exportação ativa.
+            </div>
+
+            <div class="sustenta-numeros">
+                <div class="sustenta-stat"><div class="sustenta-icon">⭐</div><strong>4.8/5</strong><p>Avaliação média no Google</p></div>
+                <div class="sustenta-stat"><div class="sustenta-icon">📦</div><strong>1,4 mi</strong><p>Unidades produzidas/ano</p></div>
+                <div class="sustenta-stat"><div class="sustenta-icon">📅</div><strong>+20 anos</strong><p>De atuação (desde 2005)</p></div>
+                <div class="sustenta-stat"><div class="sustenta-icon">🌎</div><strong>6 países</strong><p>Recebem produtos Amifec</p></div>
+                <div class="sustenta-stat"><div class="sustenta-icon">💚</div><strong>92%</strong><p>De resíduos reaproveitados</p></div>
+                <div class="sustenta-stat"><div class="sustenta-icon">🏅</div><strong>PR</strong><p>Indústria 100% paranaense</p></div>
+            </div>
+
+            <div class="cases-bloco">
+                <h3>🏅 Bases de Diferenciação (públicas)</h3>
+                <div class="didatico-aviso" style="margin-bottom: 25px;">
+                    <span class="didatico-badge">Conteúdo público</span>
+                    Os pontos abaixo são baseados em <strong>informações públicas</strong> sobre a Amifec
+                    (LinkedIn, perfis comerciais). Certificações e prêmios específicos não foram
+                    divulgados pela empresa.
+                </div>
+                <div class="cases-grid">
+                    <div class="case-card">
+                        <div class="case-ano">2005</div>
+                        <h4>Fundação</h4>
+                        <p>Amifec Alimentos Ltda fundada em Nova Londrina-PR, dando início à trajetória
+                        no setor de amidos e féculas vegetais.</p>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-ano">+20</div>
+                        <h4>Anos de Mercado</h4>
+                        <p>Mais de duas décadas de atuação ininterrupta no setor alimentício, com
+                        crescimento e consolidação regional.</p>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-ano">3</div>
+                        <h4>Unidades Fabris</h4>
+                        <p>Operação em três unidades no Paraná — Nova Londrina (matriz), Cidade Gaúcha
+                        (polvilheira) e Maria Helena.</p>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-ano">B2B</div>
+                        <h4>Mercado Industrial</h4>
+                        <p>Fornecimento para indústrias alimentícias, panificadoras e food service,
+                        com linha técnica de amidos modificados.</p>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-ano">🌎</div>
+                        <h4>Exportação Ativa</h4>
+                        <p>Registros de comércio internacional ativos, com vendas a compradores
+                        externos — referência no segmento de derivados de mandioca.</p>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-ano">📱</div>
+                        <h4>Presença Digital</h4>
+                        <p>Marca ativa nas redes sociais (@amifec.alimentos no Instagram e LinkedIn)
+                        e site oficial amifec.com.br.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cases-bloco">
+                <h3>📈 Impacto Estimado (ilustrativo)</h3>
+                <div class="didatico-aviso" style="margin-bottom: 25px;">
+                    <span class="didatico-badge">Dados ilustrativos</span>
+                    Os números abaixo são <strong>estimativas didáticas</strong> usadas no trabalho
+                    para discutir o impacto social/econômico de uma indústria do porte da Amifec.
+                </div>
+                <div class="impacto-grid">
+                    <div class="impacto-item">
+                        <h4>👨‍👩‍👧 Famílias Impactadas</h4>
+                        <p>Estimativa: <strong>centenas de famílias</strong> têm na Amifec sua principal
+                        fonte de renda em Nova Londrina, Cidade Gaúcha e Maria Helena (PR).</p>
+                    </div>
+                    <div class="impacto-item">
+                        <h4>🌾 Cadeia da Mandioca</h4>
+                        <p>Estímulo a produtores rurais da região noroeste do Paraná, fortalecendo
+                        a cadeia agroindustrial da mandioca.</p>
+                    </div>
+                    <div class="impacto-item">
+                        <h4>💰 Economia Regional</h4>
+                        <p>Geração de empregos, recolhimento de tributos e movimentação econômica
+                        nos três municípios paranaenses onde opera.</p>
+                    </div>
+                    <div class="impacto-item">
+                        <h4>🎓 Desenvolvimento</h4>
+                        <p>Capacitação e qualificação de mão de obra local, contribuindo para o
+                        desenvolvimento técnico da região agroindustrial.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="acoes-sociais">
+                <h3>💬 Identidade da Amifec (fontes públicas)</h3>
+                <div class="acoes-grid">
+                    <div class="acao-item"><h4>🏭 Setor de Atuação</h4><p>"Fabricação de amidos e féculas de vegetais — referência no segmento de derivados de mandioca, com atuação nacional e internacional."</p></div>
+                    <div class="acao-item"><h4>🏗️ Infraestrutura</h4><p>"Empresa privada com infraestrutura moderna, maquinário avançado e pessoal capacitado, sempre com foco no controle da qualidade."</p></div>
+                    <div class="acao-item"><h4>📅 Fundação</h4><p>"Indústria privada brasileira fundada em 2005, com sede em Nova Londrina-PR e filiais em Cidade Gaúcha e Maria Helena (PR)."</p></div>
+                    <div class="acao-item"><h4>🧑‍🍳 Marca</h4><p>"Indústria Brasileira de Alimentos · Cremosidade, praticidade e só 3 ingredientes — o jeito Amifec de pôr qualidade na mesa do brasileiro."</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONCLUSÃO ===== -->
+    <section id="conclusao" class="section section-alt">
+        <div class="container">
+            <span class="section-tag">Reflexão Final</span>
+            <h2 class="section-title">📝 Conclusão</h2>
+            <div class="conclusao-box">
+                <p>Ao longo deste trabalho, conhecemos a fundo a <strong>Amifec Alimentos</strong>:
+                sua história de mais de 20 anos, sua estrutura organizacional, seus departamentos,
+                seus números, sua matriz em Nova Londrina-PR e os planos para os próximos 10 anos.</p>
+
+                <p>Ficou claro que a <strong>Administração</strong> é o que mantém todas essas peças
+                funcionando em sincronia. Sem ela, não haveria gestão financeira saudável, exportações,
+                clientes ativos nem famílias com renda garantida na região noroeste do Paraná.</p>
+
+                <p>A Amifec mostra, na prática, que <strong>tradição + planejamento + pessoas</strong>
+                forma a base de qualquer empresa que pretende crescer de forma sólida.
+                Cada R$ 1,00 que entra como receita só vira lucro porque o Financeiro controla,
+                a Produção entrega, a Qualidade aprova, o Comercial vende e a Logística distribui —
+                tudo isso orquestrado pela boa administração.</p>
+
+                <p>Mais do que vender alimentos, a Amifec representa o orgulho de uma empresa
+                <strong>100% paranaense</strong> que está construindo, com método e visão de longo prazo,
+                um lugar entre as <strong>maiores indústrias alimentícias do Brasil</strong> até 2035.</p>
+
+                <p class="conc-final">⭐ <strong>Lição final:</strong> administrar bem não é só "cuidar do dinheiro" —
+                é cuidar de pessoas, processos, tempo e propósito. E é exatamente isso que faz da
+                Amifec Alimentos uma empresa admirável.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 8. JOGO - DESAFIO AMIFEC ===== -->
+    <section id="jogo" class="section">
+        <div class="container">
+            <span class="section-tag">Diversão</span>
+            <h2 class="section-title">🎮 Desafio Amifec</h2>
+            <p class="section-subtitle">Pegue os alimentos certos, evite os errados e colete power-ups especiais!</p>
+
+            <div class="jogo-container">
+                <!-- Painel de informações -->
+                <div class="jogo-painel">
+                    <div class="jogo-stat">
+                        <span class="stat-label">⭐ Pontos</span>
+                        <strong id="pontos">0</strong>
+                    </div>
+                    <div class="jogo-stat">
+                        <span class="stat-label">⏱️ Tempo</span>
+                        <strong id="tempo">45</strong>
+                    </div>
+                    <div class="jogo-stat">
+                        <span class="stat-label">❤️ Vidas</span>
+                        <strong id="vidas">❤❤❤</strong>
+                    </div>
+                    <div class="jogo-stat">
+                        <span class="stat-label">🔥 Combo</span>
+                        <strong id="combo">x1</strong>
+                    </div>
+                    <div class="jogo-stat">
+                        <span class="stat-label">📊 Nível</span>
+                        <strong id="nivel">1</strong>
+                    </div>
+                    <div class="jogo-stat">
+                        <span class="stat-label">🏆 Recorde</span>
+                        <strong id="recorde">0</strong>
+                    </div>
+                </div>
+
+                <!-- Seleção de dificuldade -->
+                <div class="jogo-config">
+                    <p><strong>Escolha a dificuldade:</strong></p>
+                    <div class="dificuldade-botoes">
+                        <button class="btn-dif" data-dif="facil">🟢 Fácil</button>
+                        <button class="btn-dif active" data-dif="medio">🟡 Médio</button>
+                        <button class="btn-dif" data-dif="dificil">🔴 Difícil</button>
+                    </div>
+                    <label class="som-toggle">
+                        <input type="checkbox" id="somToggle" checked> 🔊 Som ativado
+                    </label>
+                    <button id="btnIniciar" class="btn btn-primary btn-jogo">▶ Iniciar Jogo</button>
+                    <button id="btnPause" class="btn btn-dif btn-jogo" style="display:none;">⏸ Pausar</button>
+                </div>
+
+                <!-- Área de jogo -->
+                <div id="areaJogo" class="area-jogo">
+                    <div class="jogo-overlay" id="jogoOverlay">
+                        <div class="overlay-content">
+                            <h3>🎮 Pronto para o Desafio?</h3>
+                            <p>📝 <strong>Como jogar:</strong></p>
+                            <ul class="regras-lista">
+                                <li>🍎 Clique nos <strong>alimentos</strong> para ganhar pontos</li>
+                                <li>💣 <strong>Evite</strong> bombas, lixo e itens estragados</li>
+                                <li>⭐ Itens <strong>dourados</strong> valem 30 pontos!</li>
+                                <li>⏰ Pegue relógios para ganhar tempo extra</li>
+                                <li>❤️ Você tem vidas — não erre demais!</li>
+                                <li>🔥 Acerte em sequência para ativar <strong>combos</strong></li>
+                            </ul>
+                            <p>Escolha a dificuldade e clique em iniciar!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Power-ups info -->
+                <div class="powerups-info">
+                    <div class="powerup-item"><span>🍎</span> Alimento (+10)</div>
+                    <div class="powerup-item"><span>⭐</span> Dourado (+30)</div>
+                    <div class="powerup-item"><span>👾</span> Boss (+100)</div>
+                    <div class="powerup-item"><span>⏰</span> Tempo (+5s)</div>
+                    <div class="powerup-item"><span>💖</span> Vida extra</div>
+                    <div class="powerup-item"><span>🧊</span> Congelar 4s</div>
+                    <div class="powerup-item"><span>✨</span> Pontos x2 (6s)</div>
+                    <div class="powerup-item"><span>💣</span> Bomba (perde vida)</div>
+                    <div class="powerup-item"><span>🗑️</span> Lixo (-20 pts)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== QUIZ AMIFEC ===== -->
+    <section id="quiz" class="section section-alt">
+        <div class="container">
+            <span class="section-tag">Teste Seus Conhecimentos</span>
+            <h2 class="section-title">🧠 Quiz Amifec</h2>
+            <p class="section-subtitle">10 perguntas sobre a Amifec Alimentos e administração. Você consegue ser
+            aprovado com nota máxima?</p>
+
+            <div class="quiz-container">
+                <!-- Tela inicial -->
+                <div id="quizInicio" class="quiz-tela">
+                    <div class="quiz-hero">
+                        <div class="quiz-emoji">🎓</div>
+                        <h3>Pronto para o desafio?</h3>
+                        <p>Responda 10 perguntas sobre a história, valores e estrutura da Amifec Alimentos.</p>
+                        <ul class="quiz-regras">
+                            <li>✅ 10 questões de múltipla escolha</li>
+                            <li>⏱️ 20 segundos por pergunta</li>
+                            <li>🏆 Pontuação ao final + revisão das respostas</li>
+                            <li>🎯 Tente acertar todas e ganhe a medalha de ouro!</li>
+                        </ul>
+                        <button id="btnIniciarQuiz" class="btn btn-primary">▶ Começar Quiz</button>
+                    </div>
+                </div>
+
+                <!-- Tela das perguntas -->
+                <div id="quizPergunta" class="quiz-tela" style="display:none;">
+                    <div class="quiz-header">
+                        <div class="quiz-progresso">
+                            <span id="quizNum">Pergunta 1 de 10</span>
+                            <div class="quiz-barra"><div id="quizBarraFill"></div></div>
+                        </div>
+                        <div class="quiz-timer">
+                            <span>⏱️</span> <strong id="quizTimer">20</strong>s
+                        </div>
+                    </div>
+                    <h3 id="quizTextoPergunta" class="quiz-texto"></h3>
+                    <div id="quizOpcoes" class="quiz-opcoes"></div>
+                    <div id="quizFeedback" class="quiz-feedback"></div>
+                </div>
+
+                <!-- Tela final -->
+                <div id="quizFinal" class="quiz-tela" style="display:none;">
+                    <div class="quiz-resultado">
+                        <div id="quizMedalha" class="quiz-medalha">🏆</div>
+                        <h3 id="quizTitulo">Parabéns!</h3>
+                        <p id="quizMensagem"></p>
+                        <div class="quiz-placar">
+                            <div><strong id="quizAcertos">0</strong><span>Acertos</span></div>
+                            <div><strong id="quizErros">0</strong><span>Erros</span></div>
+                            <div><strong id="quizPercentual">0%</strong><span>Aproveitamento</span></div>
+                        </div>
+                        <div id="quizRevisao" class="quiz-revisao"></div>
+                        <button id="btnRefazerQuiz" class="btn btn-primary">🔄 Refazer Quiz</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section id="contato" class="section section-alt">
+        <div class="container">
+            <span class="section-tag">Fale Conosco</span>
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contato-grid">
+                <div class="contato-info">
+                    <h3>Informações</h3>
+                    <div class="contato-item">
+                        <span>📍</span>
+                        <div>
+                            <strong>Matriz</strong>
+                            <p>Rodovia PR 182, Km 3<br>Nova Londrina - PR &middot; CEP 87860-000</p>
+                        </div>
+                    </div>
+                    <div class="contato-item">
+                        <span>🏭</span>
+                        <div>
+                            <strong>Filiais</strong>
+                            <p>Cidade Gaúcha-PR (Rod. PR 482, Km 46)<br>Maria Helena-PR (Rod. PR 482, Km 101)</p>
+                        </div>
+                    </div>
+                    <div class="contato-item">
+                        <span class="contato-icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.24 1.02l-2.21 2.2z"/></svg></span>
+                        <div>
+                            <strong>Telefone</strong>
+                            <p><a href="tel:+554434321080">(44) 3432-1080</a></p>
+                        </div>
+                    </div>
+                    <div class="contato-item">
+                        <span class="contato-icone whatsapp"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg></span>
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <p><a href="https://wa.me/554434321080" target="_blank" rel="noopener">(44) 3432-1080</a></p>
+                        </div>
+                    </div>
+                    <div class="contato-item">
+                        <span class="contato-icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.236-8 5-8-5V6l8 5 8-5v2.236z"/></svg></span>
+                        <div>
+                            <strong>E-mail</strong>
+                            <p><a href="mailto:amifec@amifec.com.br">amifec@amifec.com.br</a></p>
+                        </div>
+                    </div>
+                    <div class="contato-item">
+                        <span class="contato-icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm6.93 6h-2.95a15.6 15.6 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.92 8zM12 4.04A13.7 13.7 0 0 1 13.9 8h-3.8A13.7 13.7 0 0 1 12 4.04zM4.26 14a7.94 7.94 0 0 1 0-4h3.38a16.3 16.3 0 0 0 0 4zm.82 2h2.95a15.6 15.6 0 0 0 1.38 3.56A8.03 8.03 0 0 1 5.08 16zm2.95-8H5.08a8.03 8.03 0 0 1 4.33-3.56A15.6 15.6 0 0 0 8.03 8zM12 19.96A13.7 13.7 0 0 1 10.1 16h3.8A13.7 13.7 0 0 1 12 19.96zM14.34 14H9.66a14.32 14.32 0 0 1 0-4h4.68a14.32 14.32 0 0 1 0 4zm.25 5.56A15.6 15.6 0 0 0 15.97 16h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14a16.3 16.3 0 0 0 0-4h3.38a7.94 7.94 0 0 1 0 4z"/></svg></span>
+                        <div>
+                            <strong>Site Oficial</strong>
+                            <p><a href="https://www.amifec.com.br" target="_blank" rel="noopener">www.amifec.com.br</a></p>
+                        </div>
+                    </div>
+                    <div class="contato-item">
+                        <span class="contato-icone"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.86 5.86 0 0 0-2.13 1.38A5.86 5.86 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91a5.86 5.86 0 0 0 1.38 2.13 5.86 5.86 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.86 5.86 0 0 0 2.13-1.38 5.86 5.86 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.86 5.86 0 0 0-1.38-2.13A5.86 5.86 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.4-11.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg></span>
+                        <div>
+                            <strong>Redes Sociais</strong>
+                            <p>
+                                <a href="https://www.instagram.com/amifec.alimentos" target="_blank" rel="noopener" class="rede-link"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.86 5.86 0 0 0-2.13 1.38A5.86 5.86 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91a5.86 5.86 0 0 0 1.38 2.13 5.86 5.86 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.86 5.86 0 0 0 2.13-1.38 5.86 5.86 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.86 5.86 0 0 0-1.38-2.13A5.86 5.86 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.4-11.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg> Instagram</a>
+                                &nbsp;·&nbsp;
+                                <a href="https://www.linkedin.com/company/amifec-alimentos" target="_blank" rel="noopener" class="rede-link"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 2.07-2.07 2.07 2.07 0 0 1-2.07 2.07zM7.12 20.45H3.56V9h3.56zM22.22 0H1.77A1.75 1.75 0 0 0 0 1.73v20.54A1.75 1.75 0 0 0 1.77 24h20.45A1.76 1.76 0 0 0 24 22.27V1.73A1.76 1.76 0 0 0 22.22 0z"/></svg> LinkedIn</a>
+                                <br><small>@amifec.alimentos</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contato-form" id="contatoForm">
+                    <h3>Envie uma mensagem</h3>
+                    <input type="text" placeholder="Seu nome" required>
+                    <input type="email" placeholder="Seu e-mail" required>
+                    <input type="text" placeholder="Assunto" required>
+                    <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>🌽 Amifec Alimentos</h3>
+                <p>Qualidade que se põe à mesa, desde 2005. Do Paraná para o Brasil e para o mundo.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/amifec.alimentos" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.86 5.86 0 0 0-2.13 1.38A5.86 5.86 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91a5.86 5.86 0 0 0 1.38 2.13 5.86 5.86 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.86 5.86 0 0 0 2.13-1.38 5.86 5.86 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.86 5.86 0 0 0-1.38-2.13A5.86 5.86 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.4-11.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg></a>
+                    <a href="https://www.linkedin.com/company/amifec-alimentos" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 2.07-2.07 2.07 2.07 0 0 1-2.07 2.07zM7.12 20.45H3.56V9h3.56zM22.22 0H1.77A1.75 1.75 0 0 0 0 1.73v20.54A1.75 1.75 0 0 0 1.77 24h20.45A1.76 1.76 0 0 0 24 22.27V1.73A1.76 1.76 0 0 0 22.22 0z"/></svg></a>
+                    <a href="https://wa.me/554434321080" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg></a>
+                    <a href="https://www.amifec.com.br" target="_blank" rel="noopener" aria-label="Site oficial" title="Site oficial"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm6.93 6h-2.95a15.6 15.6 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.92 8zM12 4.04A13.7 13.7 0 0 1 13.9 8h-3.8A13.7 13.7 0 0 1 12 4.04zM4.26 14a7.94 7.94 0 0 1 0-4h3.38a16.3 16.3 0 0 0 0 4zm.82 2h2.95a15.6 15.6 0 0 0 1.38 3.56A8.03 8.03 0 0 1 5.08 16zm2.95-8H5.08a8.03 8.03 0 0 1 4.33-3.56A15.6 15.6 0 0 0 8.03 8zM12 19.96A13.7 13.7 0 0 1 10.1 16h3.8A13.7 13.7 0 0 1 12 19.96zM14.34 14H9.66a14.32 14.32 0 0 1 0-4h4.68a14.32 14.32 0 0 1 0 4zm.25 5.56A15.6 15.6 0 0 0 15.97 16h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14a16.3 16.3 0 0 0 0-4h3.38a7.94 7.94 0 0 1 0 4z"/></svg></a>
+                    <a href="mailto:amifec@amifec.com.br" aria-label="E-mail" title="E-mail"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.236-8 5-8-5V6l8 5 8-5v2.236z"/></svg></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#sobre">Sobre nós</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#departamentos">Departamentos</a></li>
+                    <li><a href="#jogo">Jogue agora</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Projeto Escolar</h4>
+                <p><strong>Site Institucional Amifec</strong></p>
+                <p>Trabalho de Administração</p>
+                <p>&copy; <span id="ano"></span> - Todos os direitos reservados</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Desenvolvido com 💚 para o trabalho de Administração</p>
+        </div>
+    </footer>
+
+    <button id="btnTopo" class="btn-topo" aria-label="Voltar ao topo">⬆</button>
+
+    <!-- ===== BOTÃO WHATSAPP FLUTUANTE ===== -->
+    <a href="https://wa.me/554434321080?text=Olá!%20Vim%20pelo%20site%20da%20Amifec%20e%20gostaria%20de%20mais%20informações." target="_blank" rel="noopener" class="btn-whatsapp" aria-label="Falar no WhatsApp" title="Fale conosco no WhatsApp"><svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg></a>
+
+    <!-- ===== BANNER LGPD (Cookies) ===== -->
+    <div class="lgpd-banner" id="lgpdBanner" role="dialog" aria-labelledby="lgpdTitulo" aria-describedby="lgpdTexto">
+        <div class="lgpd-content">
+            <div class="lgpd-icon">🍪</div>
+            <div class="lgpd-texto">
+                <h4 id="lgpdTitulo">Este site usa cookies</h4>
+                <p id="lgpdTexto">Utilizamos cookies para melhorar sua experiência de navegação, analisar o tráfego do site
+                e personalizar o conteúdo, em conformidade com a <strong>LGPD (Lei nº 13.709/2018)</strong>.
+                Ao continuar, você concorda com o uso de cookies.</p>
+            </div>
+            <div class="lgpd-acoes">
+                <button id="lgpdAceitar" class="btn btn-primary lgpd-btn">Aceitar todos</button>
+                <button id="lgpdRecusar" class="lgpd-btn lgpd-btn-secundario">Apenas essenciais</button>
+                <a href="#" id="lgpdSaibaMais" class="lgpd-link">Saiba mais</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
