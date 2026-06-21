@@ -1,65 +1,61 @@
-# Amifec Alimentos — Site Institucional
+# Amifec Alimentos — Projeto Escolar
 
-Arquivos estáticos do site institucional da **Amifec Alimentos** (HTML, CSS e JavaScript).
+## Sobre o Projeto
 
----
+Este site foi desenvolvido como parte de um **trabalho escolar**, com o objetivo de aplicar conhecimentos de desenvolvimento web por meio da criação de uma página institucional para a empresa **Amifec Alimentos**.
 
-## 📦 Conteúdo do ZIP
+O projeto buscou apresentar informações sobre a empresa, sua área de atuação, seus produtos e sua importância no setor alimentício, utilizando recursos visuais e tecnológicos para tornar a experiência do usuário mais agradável e informativa.
 
+## Objetivos
+
+* Desenvolver um site funcional e responsivo;
+* Aplicar conceitos de programação web;
+* Organizar informações de forma clara e acessível;
+* Criar uma interface visual moderna e intuitiva;
+* Demonstrar, na prática, conhecimentos adquiridos em sala de aula.
+
+## Funcionalidades do Site
+
+* Página inicial com apresentação da empresa;
+* Seção institucional com informações sobre a Amifec;
+* Área dedicada aos produtos;
+* Informações de contato;
+* Navegação simples e intuitiva;
+* Layout adaptado para diferentes dispositivos.
+
+## Tecnologias Utilizadas
+
+* **HTML5** — Estrutura do site
+* **CSS3** — Estilização e design responsivo
+* **JavaScript** — Interatividade e funcionalidades dinâmicas
+* **GitHub Pages** — Hospedagem do projeto
+
+## Estrutura do Projeto
+
+```bash
+Amifec-Alimentos/
+│
+├── index.html
+├── style.css
+├── script.js
+└── assets/
 ```
-amifec-site/
-├── index.html   # Estrutura e conteúdo do site
-├── style.css    # Estilos completos, responsivos e modo escuro
-└── script.js    # Interatividade: menu, scroll, carrossel, FAQ, etc.
-```
 
----
+## Aprendizados
 
-## 🚀 Como usar
+Durante o desenvolvimento deste projeto, foi possível aprofundar conhecimentos em:
 
-1. Extraia o ZIP.
-2. Abra o arquivo `index.html` em qualquer navegador moderno.
-3. Para publicar online, envie os três arquivos para o seu servidor de hospedagem estática (ex: Vercel, Netlify, GitHub Pages, cPanel, etc.).
+* Estruturação de páginas web;
+* Design e organização visual;
+* Responsividade;
+* Programação com JavaScript;
+* Publicação de projetos online.
 
-> **Nota:** o site utiliza imagens e fontes externas carregadas via CDN. Certifique-se de que os ativos locais (logos, fotos de produtos, etc.) estejam na mesma pasta que o `index.html` caso deseje hospedar tudo junto.
+## Acesso ao Site
 
----
+🔗 https://sousamaria003.github.io/Amifec-Alimentos/
 
-## 🖼️ Ajustes recentes
+## Considerações Finais
 
-### 1. Seção "🌱 Estrutura e Meio Ambiente"
-- O vídeo foi movido para **abaixo do texto**, ocupando a largura centralizada da seção.
-- Está responsivo para todos os tamanhos de tela (desktop, tablet e mobile), utilizando `clamp()` para altura fluida.
+Este projeto foi uma experiência importante para o desenvolvimento de habilidades técnicas e criativas, permitindo unir pesquisa, programação e design em um único trabalho. Além de ampliar conhecimentos em tecnologia, o projeto também contribuiu para o aprendizado sobre o setor alimentício e a atuação da Amifec no mercado.
 
-### 2. Seção "Linha de Produtos Amifec"
-- As imagens dos produtos foram ajustadas para se adaptar corretamente em todos os dispositivos.
-- Utilizado `object-fit: contain` e proporções responsivas (`4:3` em desktop/tablet e `1:1` em telas pequenas).
-- Centralização e padding interno garantem que as imagens não fiquem cortadas ou distorcidas.
-
----
-
-## 🛠️ Tecnologias
-
-- HTML5 semântico
-- CSS3 (variáveis, flexbox, grid, media queries, animações)
-- JavaScript vanilla
-- Lucide Icons (CDN)
-- Chart.js (CDN)
-
----
-
-## 📱 Responsividade
-
-O layout se adapta aos principais breakpoints:
-- **Desktop:** telas acixo de 1024px
-- **Tablet:** até 768px
-- **Mobile:** até 480px
-
----
-
-## ✉️ Contato
-
-Amifec Alimentos  
-Site: https://www.amifec.com.br  
-E-mail: amifec@amifec.com.br  
-Telefone: +55 44 3301-5533
