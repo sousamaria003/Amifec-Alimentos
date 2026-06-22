@@ -870,12 +870,6 @@ const PERGUNTAS = [
         exp: 'A Amifec é fabricante de amidos, féculas, polvilho azedo e misturas (como pão de queijo).'
     },
     {
-        q: 'Com quantos ingredientes a Amifec faz suas misturas mais famosas?',
-        op: ['Apenas 1', 'Apenas 3', '5 ingredientes', '10 ou mais'],
-        correta: 1,
-        exp: 'A marca registrada Amifec: cremosidade e praticidade com apenas 3 ingredientes.'
-    },
-    {
         q: 'Em qual estado brasileiro a Amifec tem sua origem?',
         op: ['São Paulo', 'Minas Gerais', 'Paraná', 'Santa Catarina'],
         correta: 2,
